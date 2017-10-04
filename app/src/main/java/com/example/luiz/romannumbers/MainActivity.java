@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         EditText input = (EditText) findViewById(R.id.input);
         Button convert = (Button) findViewById(R.id.convert);
         input.setEnabled(true);
+
     }
 
     public void onConvert(View view) {
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 roman = ArabicToRoman.toRoman(number);
                 result.setText(roman);
             } catch (Throwable e) {
-                Toast toast = Toast.makeText(getApplicationContext(), e.getMessage().toString(), Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(), "Something wrong happened", Toast.LENGTH_SHORT);
                 toast.setGravity(Gravity.CENTER, 0, 0);
                 toast.show();
             }
