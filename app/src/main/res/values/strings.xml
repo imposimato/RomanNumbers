@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Roman Numbers</string>
+    <string name="convert">Convert</string>
+    <string name="arabic_to_roman">Arabic to Roman</string>
+    <string name="roman_to_arabic">Roman to Arabic</string>
+    <string name="error_arabic">Insert a value between 1 and 3999</string>
+</resources>

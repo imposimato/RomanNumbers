@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.luiz.romannumbers.MainActivity">
+
+    <ToggleButton
+        android:id="@+id/roman_or_arabic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:checked="true"
+        android:onClick="onToggleClicked"
+        android:textOff="@string/roman_to_arabic"
+        android:textOn="@string/arabic_to_roman"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/roman_or_arabic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:inputType="number"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5sp"
+        android:onClick="onConvert"
+        android:text="@string/convert"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/convert"
+        android:layout_centerHorizontal="true"
+        android:textSize="50sp" />
+
+
+</RelativeLayout>
